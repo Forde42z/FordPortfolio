@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Allows stacking of header and sections */
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    color: white; /* Set default text color to white */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Positions h1 and nav apart */
+    align-items: center;
+    width: 100%; /* Ensures full width for header */
+    padding: 20px; /* Add padding for aesthetics */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns links to the right */
+}
+
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: white; /* Set link color to white */
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #0ef; /* Change color on hover */
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+/* Additional section styling can be added here */
+#home {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 50px;
+    background: #111; /* Dark background */
+    color: white; /* White text color */
+}
+
+.profile-pic {
+    max-width: 30%; /* Set max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make image circular */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.home-info {
+    max-width: 70%; /* Limit the width of the text section */
+}
+
+.home-info h2 {
+    font-size: 2.5em; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.home-info p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+.cta-button {
+    background: #0ef; /* Button background color */
+    color: #000; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-size: 1.1em; /* Button text size */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.cta-button:hover {
+    background: #fff; /* Change background on hover */
+    color: #0ef; /* Change text color on hover */
+
+	padding: 50px; /* Padding around the section */}
+#about {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 50px; /* Padding around the section */
+    background: #222; /* Dark background */
+    color: white; /* White text color */
+}
+h2 {
+	color: aqua
+}
+h3 {
+	color: aqua
+}
+.about-info {
+    max-width: 70%; /* Limit the width of the text section */
+    text-align: left; /* Left-align the text */
+}
+
+.about-info h2 {
+    font-size: 2.5em; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.about-info p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.about-info h3 {
+    font-size: 2em; /* Font size for subheading */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.about-info ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.about-info li {
+    font-size: 1.1em; /* Font size for list items */
+    margin: 5px 0; /* Space between list items */
+	 background: #222; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+#about h2 {
+    font-size: 2.5em; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#about p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+#about h3 {
+    font-size: 2em; /* Font size for subheading */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+#about ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#about li {
+    font-size: 1.1em; /* Font size for list items */
+    margin: 5px 0; /* Space between list items */
+}
+#skills {
+    padding: 50px; /* Padding around the section */
+    background: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+.skills-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Margin around the list */
+}
+
+.skills-list li {
+    font-size: 1.1em; /* Font size for list items */
+    margin: 10px 0; /* Space between list items */
+    text-align: left; /* Left-align text for better readability */
+    padding: 10px; /* Padding inside list items */
+    border-bottom: 1px solid #444; /* Optional: bottom border for separation */
+}
+
+#projects {
+    padding: 50px; /* Padding around the section */
+    background: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+#projects {
+    padding: 50px; /* Padding around the section */
+    background: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+.project-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out the projects evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.project {
+    flex: 0 0 45%; /* Allow each project to take up to 45% of the container */
+    margin: 20px; /* Margin around each project */
+}
+
+.project-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.project-description {
+    margin-top: 10px; /* Space above the description */
+    font-size: 1em; /* Font size for descriptions */
+}
+#contact {
+    padding: 50px; /* Padding around the section */
+    background: #222; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+}
+
+.contact-form {
+    max-width: 800px; /* Increase the max width of the form */
+    margin: 0 auto; /* Center the form */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Column layout for form elements */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+    text-align: left; /* Left-align text for labels */
+}
+
+label {
+    font-size: 1.1em; /* Font size for labels */
+    margin-bottom: 5px; /* Space below labels */
+    display: block; /* Block display for labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #444; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    background: #333; /* Input background color */
+    color: white; /* Input text color */
+}
+
+button {
+    padding: 10px 20px; /* Padding for button */
+    background: #0ef; /* Button background color */
+    color: #222; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1em; /* Font size for button */
+    transition: background 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background: #0bc; /* Darker shade on hover */
+}
+footer {
+    background: #222; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the footer */
+    position: relative; /* Positioning context */
+    bottom: 0; /* Aligns at the bottom */
+    width: 100%; /* Full width of the footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em; /* Font size for the footer text */
+}

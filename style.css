@@ -9,37 +9,42 @@
 
 body {
     display: flex;
-    flex-direction: column; /* Allows stacking of header and sections */
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background: #000;
-    color: white; /* Set default text color to white */
+    color: white;
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Positions h1 and nav apart */
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensures full width for header */
-    padding: 20px; /* Add padding for aesthetics */
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
-    justify-content: flex-end; /* Aligns links to the right */
+    justify-content: flex-end;
 }
 
 nav a {
     position: relative;
     font-size: 1.1em;
-    color: white; /* Set link color to white */
+    color: white;
     text-decoration: none;
     padding: 6px 20px;
     transition: .5s;
 }
 
 nav a:hover {
-    color: #0ef; /* Change color on hover */
+    color: #0ef;
 }
 
 nav a span {
@@ -61,237 +66,270 @@ nav a:hover span {
     opacity: 1;
 }
 
-/* Additional section styling can be added here */
 #home {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     padding: 50px;
-    background: #111; /* Dark background */
-    color: white; /* White text color */
+    background: #111;
+    color: white;
 }
 
 .profile-pic {
-    max-width: 30%; /* Set max width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make image circular */
-    margin-right: 20px; /* Space between image and text */
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .home-info {
-    max-width: 70%; /* Limit the width of the text section */
+    max-width: 70%;
 }
 
 .home-info h2 {
-    font-size: 2.5em; /* Font size for heading */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .home-info p {
-    font-size: 1.2em; /* Font size for paragraph */
-    margin-bottom: 30px; /* Space below paragraph */
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background: #0ef; /* Button background color */
-    color: #000; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    font-size: 1.1em; /* Button text size */
-    transition: background 0.3s; /* Transition effect */
+    background: #0ef;
+    color: #000;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background: #fff; /* Change background on hover */
-    color: #0ef; /* Change text color on hover */
+    background: #fff;
+    color: #0ef;
+}
 
-	padding: 50px; /* Padding around the section */}
 #about {
     display: flex;
-    align-items: center; /* Center items vertically */
-    padding: 50px; /* Padding around the section */
-    background: #222; /* Dark background */
-    color: white; /* White text color */
+    align-items: center;
+    padding: 50px;
+    background: #222;
+    color: white;
 }
+
 h2 {
-	color: aqua
+    color: aqua;
 }
+
 h3 {
-	color: aqua
+    color: aqua;
 }
+
 .about-info {
-    max-width: 70%; /* Limit the width of the text section */
-    text-align: left; /* Left-align the text */
+    max-width: 70%;
+    text-align: left;
 }
 
 .about-info h2 {
-    font-size: 2.5em; /* Font size for heading */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .about-info p {
-    font-size: 1.2em; /* Font size for paragraph */
-    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .about-info h3 {
-    font-size: 2em; /* Font size for subheading */
-    margin-bottom: 10px; /* Space below subheading */
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .about-info ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .about-info li {
-    font-size: 1.1em; /* Font size for list items */
-    margin: 5px 0; /* Space between list items */
-	 background: #222; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
+    font-size: 1.1em;
+    margin: 5px 0;
+    background: #222;
+    color: white;
+    text-align: center;
 }
 
-#about h2 {
-    font-size: 2.5em; /* Font size for heading */
-    margin-bottom: 20px; /* Space below heading */
-}
-
-#about p {
-    font-size: 1.2em; /* Font size for paragraph */
-    margin-bottom: 30px; /* Space below paragraph */
-}
-
-#about h3 {
-    font-size: 2em; /* Font size for subheading */
-    margin-bottom: 10px; /* Space below subheading */
-}
-
-#about ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#about li {
-    font-size: 1.1em; /* Font size for list items */
-    margin: 5px 0; /* Space between list items */
-}
 #skills {
-    padding: 50px; /* Padding around the section */
-    background: #333; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
+    padding: 50px;
+    background: #333;
+    color: white;
+    text-align: center;
 }
 
 .skills-list {
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove default padding */
-    margin: 20px 0; /* Margin around the list */
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
 .skills-list li {
-    font-size: 1.1em; /* Font size for list items */
-    margin: 10px 0; /* Space between list items */
-    text-align: left; /* Left-align text for better readability */
-    padding: 10px; /* Padding inside list items */
-    border-bottom: 1px solid #444; /* Optional: bottom border for separation */
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #444;
 }
 
 #projects {
-    padding: 50px; /* Padding around the section */
-    background: #333; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
-}
-
-#projects {
-    padding: 50px; /* Padding around the section */
-    background: #333; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
+    padding: 50px;
+    background: #333;
+    color: white;
+    text-align: center;
 }
 
 .project-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Space out the projects evenly */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project {
-    flex: 0 0 45%; /* Allow each project to take up to 45% of the container */
-    margin: 20px; /* Margin around each project */
+    flex: 0 0 45%;
+    margin: 20px;
 }
 
 .project-image {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for images */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .project-description {
-    margin-top: 10px; /* Space above the description */
-    font-size: 1em; /* Font size for descriptions */
+    margin-top: 10px;
+    font-size: 1em;
 }
+
 #contact {
-    padding: 50px; /* Padding around the section */
-    background: #222; /* Dark background */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
+    padding: 50px;
+    background: #222;
+    color: white;
+    text-align: center;
 }
 
 .contact-form {
-    max-width: 800px; /* Increase the max width of the form */
-    margin: 0 auto; /* Center the form */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Column layout for form elements */
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
-    margin-bottom: 20px; /* Space between form elements */
-    text-align: left; /* Left-align text for labels */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 label {
-    font-size: 1.1em; /* Font size for labels */
-    margin-bottom: 5px; /* Space below labels */
-    display: block; /* Block display for labels */
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
 }
 
 input, textarea {
-    width: 100%; /* Full width for inputs and textarea */
-    padding: 10px; /* Padding for inputs */
-    border: 1px solid #444; /* Border styling */
-    border-radius: 5px; /* Rounded corners */
-    background: #333; /* Input background color */
-    color: white; /* Input text color */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: white;
 }
 
 button {
-    padding: 10px 20px; /* Padding for button */
-    background: #0ef; /* Button background color */
-    color: #222; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1.1em; /* Font size for button */
-    transition: background 0.3s; /* Transition effect */
+    padding: 10px 20px;
+    background: #0ef;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #0bc; /* Darker shade on hover */
+    background: #0bc;
 }
+
 footer {
-    background: #222; /* Dark background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Centered text */
-    padding: 20px; /* Padding around the footer */
-    position: relative; /* Positioning context */
-    bottom: 0; /* Aligns at the bottom */
-    width: 100%; /* Full width of the footer */
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
-    font-size: 1em; /* Font size for the footer text */
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+        flex: 1;
+        text-align: center;
+    }
+
+    #home, #about, #projects, #contact {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        flex: 1 0 80%;
+        margin: 20px 0;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Larger Devices */
+@media (min-width: 769px) {
+    .project-container {
+        justify-content: space-around;
+    }
+
+    .project {
+        flex: 0 0 45%;
+    }
 }
